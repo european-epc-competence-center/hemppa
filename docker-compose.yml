@@ -1,8 +1,10 @@
+version: '3'
+
 services:
   hemppa:
     container_name: hemppa
-    image: "hemppa:latest"
-    build: "."
+    image: 'hemppa:latest'
+    build: '.'
     restart: always
     environment:
       - MATRIX_ACCESS_TOKEN
@@ -12,7 +14,6 @@ services:
       - BOT_OWNERS
       - DEBUG
       - TZ
-      - LEAVE_EMPTY_ROOMS
     volumes:
       - ${PWD}/config/:/bot/config
       - ${PWD}/credentials.json:/bot/credentials.json
