@@ -161,7 +161,9 @@ class MatrixModule(BotModule):
             '!cron once 10m "drink water" — one-shot in 10 minutes\n'
             '!cron once "2026-12-24 18:00" "party" — one-shot at absolute time\n'
             '!cron daily 19 "It is 19 o clock" — shorthand for 0 19 * * *\n'
-            '!cron list / !cron remove <index> / !cron clear / !cron time\n'
+            '!cron list — show jobs\n'
+            '!cron remove <index> — remove job by index from !cron list\n'
+            '!cron clear / !cron time\n'
             'Timezone from TZ env (see !cron time). Room admin required.'
         )
 
